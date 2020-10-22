@@ -33,8 +33,8 @@ function ab(){
 function creacionDiv(){
     // creacion de div
     let nuevoDiv = document.createElement("div");
-    // recuperamos seecionLista
-    let recuperarLista = document.getElementById("seccionLista");
+    // recuperamos seecionLista además de completar el clonado con cloneNode
+    let recuperarLista = document.getElementById("seccionLista").cloneNode(true);
     // añadir
     nuevoDiv.appendChild(recuperarLista);
     document.body.appendChild(nuevoDiv);
