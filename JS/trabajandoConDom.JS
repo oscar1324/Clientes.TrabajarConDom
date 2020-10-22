@@ -16,6 +16,30 @@ function aa(){
     aa.insertBefore(nuevaH,recuperar);
 }
 
+function ab(){
+    // recuperamos la seccion primera
+    let huecoSeccionPrimera = document.getElementById("seccionPrimera");
+    //recuperamos la seccion tercera
+    let recuperarDiv = document.getElementById("seccionTercera");
+    //Tenemos que sacar el ultimo hijo del tercer parrafo del div
+    let sacarbb3 = recuperarDiv.lastElementChild;
+    // recupero el hueco del primer elemento para introducirlo
+    let a = recuperarDiv.firstElementChild;
+    //utilizo el metodo insertBefore para meter en la seccion Tercera sacarbb3 antes de a
+    recuperarDiv.insertBefore(sacarbb3,a);
+
+}
+
+function creacionDiv(){
+    // creacion de div
+    let nuevoDiv = document.createElement("div");
+    // recuperamos seecionLista
+    let recuperarLista = document.getElementById("seccionLista");
+    // añadir
+    nuevoDiv.appendChild(recuperarLista);
+    document.body.appendChild(nuevoDiv);
+}
+
 function aa2(){
         //creación mia
         let hueco = document.getElementById("seccionPrimera");
